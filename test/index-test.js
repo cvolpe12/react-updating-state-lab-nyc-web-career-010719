@@ -60,7 +60,7 @@ describe('<YouTubeDebugger />', () => {
     const expectedState = deepClone(BASE_STATE);
     expectedState.settings.bitrate = 12;
 
-    wrapper.find('.bitrate').simulate('click');
+    wrapper.find('#bitrate').simulate('click');
 
     expect(wrapper.state()).to.deep.equal(expectedState);
   });
@@ -70,7 +70,7 @@ describe('<YouTubeDebugger />', () => {
     const expectedState = deepClone(BASE_STATE);
     expectedState.settings.video.resolution = '720p';
 
-    wrapper.find('.resolution').simulate('click');
+    wrapper.find('#resolution').simulate('click');
 
     expect(wrapper.state()).to.deep.equal(expectedState);
   });
